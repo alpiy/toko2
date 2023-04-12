@@ -9,20 +9,20 @@ import dao.daoBarang;
 import java.util.List;
 import javax.swing.JOptionPane;
 import model.*;
-import views.Form;
+import views.FormBarang;
 
 /**
  *
  * @author Lenovo
  */
 public class controllerBarang {
-    Form frame;
+    FormBarang frame;
     List<Barang> listBrg;
     daoBarang daoBrg = new daoBarang();
     Barang brg = new Barang();
     private List<Barang> lisBrg;
 
-    public controllerBarang(Form frame) {
+    public controllerBarang(FormBarang frame) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
          this.frame = frame;
          listBrg = daoBrg.getData();
